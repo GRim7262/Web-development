@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>This is form</h3>
+    <!-- Submit form to backend  -->
+    <form action="backend.js">
+        <!-- Take Input as text, email, date, number -->
+        <div>
+            <label for="text">Name:</label>
+            <input type="text" name="myName" id="text">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="number">Bonus:</label>
+            <input type="number" name="myBonus" id="number">
+        </div>
+        <br>
+        <!-- Chechbox -->
+        <div>
+            <label for="checkbox">Are you eligible ?</label>
+            <input type="checkbox" name="myEligibility" id="checkbox">
+        </div>
+        <br>
+        <!-- Radio -->
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <!-- Textarea  -->
+        <div>
+            <label for="myText">Write about yourself:</label>
+            <br><textarea name="myText" cols="50" rows="10" id="myText"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="location">Location:</label>
+            <select name="myLocation" id="location">
+            <option value="Nagpur">Nagpur</option>
+            <option value="Mumbai" selected>Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+        </div>
+        <br>
+        <!-- Submit button & Reset button -->
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
