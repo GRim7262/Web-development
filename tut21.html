@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Itim', cursive;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(165, 93, 165);
+            margin: 33px auto;
+            background-color: beige;
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(243, 200, 200);
+        }
+
+        #fruit {
+            float: right;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear: both; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 25px auto;
+            width: 460px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laboriosam
+                molestias numquam aliquam expedita animi eius, soluta ducimus placeat dolore eveniet quam amet quibusdam
+                perferendis qui dolores reiciendis, corrupti in omnis fugiat cupiditate? Ullam! Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Velit nisi ut vel consequuntur repellat perspiciatis ex rerum,
+                molestias iusto aspernatur nihil voluptate pariatur veniam exercitationem beatae facilis quasi
+                perferendis doloremque placeat. Expedita, tenetur autem! </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laboriosam
+                molestias numquam aliquam expedita animi eius, soluta ducimus placeat dolore eveniet quam amet quibusdam
+                perferendis qui dolores reiciendis, corrupti in omnis fugiat cupiditate? Ullam! Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Commodi, a enim reprehenderit numquam adipisci, consequuntur autem
+                id beatae mollitia necessitatibus doloribus error officiis expedita alias maxime quos, animi facere
+                debitis recusandae itaque? Adipisci, atque. </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                laboriosam molestias numquam aliquam expedita animi eius, soluta ducimus placeat dolore eveniet quam
+                amet quibusdam perferendis qui dolores reiciendis, corrupti in omnis fugiat cupiditate? Ullam!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassesPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                laboriosam molestias numquam aliquam expedita animi eius, soluta ducimus placeat dolore eveniet quam
+                amet quibusdam perferendis qui dolores reiciendis, corrupti in omnis fugiat cupiditate? Ullam!</p>
+        </div>
+    </div>
 </body>
+
 </html>
