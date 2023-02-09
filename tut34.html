@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid red; */
+            color: rgb(255, 255, 255);
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background: url(https://png.pngtree.com/background/20211217/original/pngtree-royal-golden-blue-mandala-art-background-with-border-invitation-card-wedding-picture-image_1596347.jpg) no-repeat center center/cover;
+            font-size: 20px;
+
+            /* Box shadow offset-x offset-y color */
+            
+            /* box-shadow: 4px 4px rgb(139, 139, 255); */
+            /* Box shadow offset-x offset-y blur-radius color */
+            /* box-shadow: -4px -4px 10px rgb(139, 139, 255); */
+            
+            /* Box shadow offset-x offset-y blur-radius spread-radius color */
+            /* box-shadow: -7px -5px 10px 0px rgba(20, 126, 126, 0.4); */
+
+            box-shadow: 3px 5px 10px rgb(139, 139, 255), 3px 5px 10px rgb(139, 139, 255);
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 4px rgb(139, 139, 255); */
+            text-shadow: 3px 4px 2px rgb(139, 139, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sunt. Animi corporis aperiam, expedita
+                cum itaque ducimus amet laborum facere laudantium fuga possimus unde, similique incidunt! Doloribus illo
+                earum amet doloremque, culpa laboriosam recusandae?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sunt. Animi corporis aperiam, expedita
+                cum itaque ducimus amet laborum facere laudantium fuga possimus unde, similique incidunt! Doloribus illo
+                earum amet doloremque, culpa laboriosam recusandae?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sunt. Animi corporis aperiam, expedita
+                cum itaque ducimus amet laborum facere laudantium fuga possimus unde, similique incidunt! Doloribus illo
+                earum amet doloremque, culpa laboriosam recusandae?</p>
+        </div>
+    </div>
+</body>
+
+</html>
