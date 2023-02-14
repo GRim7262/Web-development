@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width:414px) {
+            body {
+                background-color: red;
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width:415px) and (max-width:912px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:913px) and (max-width:1279px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:1280px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<div class="container">
+    <nav class="border-now">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact</span>
+    </nav>
+    <section class="border-now">
+        <h2>Learn CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam architecto harum sint quisquam inventore est quo, quis illum itaque totam. Perferendis voluptates molestias veniam ex hic eaque, quisquam veritatis. Maxime sapiente minus eveniet ex exercitationem excepturi, dolore nisi similique unde rem eligendi dolores eius hic temporibus cum? Officia possimus error voluptas rem voluptate dolor, omnis odit neque praesentium reiciendis quae quas temporibus vero sequi reprehenderit illum quibusdam, cum maiores aperiam corrupti expedita dolore vel sed! Enim quod similique ipsum minus, ducimus eligendi autem voluptas eveniet provident cupiditate voluptatem perspiciatis nemo optio, ratione doloremque dicta sapiente unde rem ipsam? A quasi soluta animi commodi libero impedit similique voluptas id culpa maiores praesentium, ab assumenda laboriosam corporis fugit voluptatum eaque omnis molestias. Architecto, deserunt?</p>
+    </section>
+    <aside class="border-now">
+        <h1>More about us</h1>
+    </aside>
+</div>
+<footer class="border-now">Copyright Vinal 2023 &copy;</footer>
+
+<body>
+
+</body>
+
+</html>
