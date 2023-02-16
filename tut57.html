@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: aliceblue;
+            border-radius: 23px;
+        }
+
+        h1 {
+            color: rgb(58, 82, 219);
+            display: block;
+            text-align: center;
+            font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #btn {
+            display: flex;
+            margin: auto;
+            padding: 7px;
+            border-radius: 7px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio vero provident quam a quia esse,
+            aspernatur
+            vitae in harum quisquam labore amet cumque impedit omnis blanditiis deleniti veniam quidem, architecto,
+            animi quaerat aliquam? A vel odio reiciendis necessitatibus placeat perferendis dolores unde eveniet
+            inventore? Doloribus eveniet laborum voluptate eligendi, quo totam perspiciatis veniam commodi, nulla atque,
+            quidem voluptatibus facere in harum ullam. Quia explicabo similique at aliquam officiis iste aperiam
+            voluptatum eaque earum minus dolores excepturi, aliquid consectetur pariatur placeat impedit laboriosam?
+            Facere, corporis. Corporis magnam placeat voluptatum odit itaque rem rerum porro officiis quidem, obcaecati
+            numquam necessitatibus fugiat modi debitis ullam deleniti cupiditate, saepe nihil blanditiis assumenda fuga
+            molestiae nisi. Aliquam pariatur et natus nihil accusantium commodi facere vero, ut sequi nobis, quaerat
+            incidunt. Suscipit, repudiandae, velit eaque debitis perferendis asperiores, vel eligendi voluptatum numquam
+            recusandae incidunt veniam. Saepe, consequatur dignissimos? Sequi quae a labore, minima sunt optio adipisci
+            illum recusandae tenetur obcaecati at facere libero, voluptatem maiores est accusantium laboriosam sed. Sit
+            tempore sapiente voluptas quia minima incidunt reiciendis aut. Ex odit quam molestias. Vitae commodi
+            expedita, id asperiores in suscipit, accusamus placeat assumenda ab blanditiis nesciunt delectus,
+            repudiandae consequatur perspiciatis dolorum quia. Qui consequuntur sequi debitis alias cum recusandae velit
+            laudantium inventore atque commodi! Commodi quisquam excepturi voluptate? Voluptatibus, voluptas esse
+            possimus culpa autem harum architecto nihil officiis amet at.</p>
+    </div>
+    <br>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside');
+        });
+
+        para.addEventListener('mouseout', function run(){
+            console.log('Mouse Outside');
+        });
+
+        function toggleHide() {
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else
+            para.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
