@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title Dance Academy
+    style
+        include ../static/style.css
+  body
+    nav#navbar.top
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | Dance Academy
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Contact Us]
+    section#introSection
+        div Welcome to Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Commitment
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.
+        div.card
+            h3 Inspiration
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.            
+        div.card
+            h3 Dedication
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.
+
+    //- section#sponsorsSection
+    //-     h2 Our Sponsors
+
+    footer#footer
+        | Copyright © 2023 Dance Academy
+    include ../static/index.js
